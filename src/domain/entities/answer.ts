@@ -1,7 +1,14 @@
 import { randomUUID } from 'node:crypto';
 
+interface AnswerProps {
+	content: string;
+	authorId: string;
+	questionId: string;
+	id?: string;
+}
+
 export class Answer {
-	constructor(public content: string, public id?: string) {
-		this.id = id ?? randomUUID();
+	constructor(public props: AnswerProps) {
+		this.props.id = props.id ?? randomUUID();
 	}
 }

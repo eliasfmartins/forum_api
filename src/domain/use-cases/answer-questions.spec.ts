@@ -11,5 +11,5 @@ test('create an answer ', () => {
 		instructorId: '1',
 	});
 
-	expect(answer.content).toEqual('Nova resposta');
+	expect(answer.props.content).toEqual('Nova resposta');
 });
