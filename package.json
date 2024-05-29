@@ -2,6 +2,10 @@
   "dependencies": {
     "init": "^0.1.2"
   },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch":"vitest"
+  },
   "devDependencies": {
     "@types/node": "^20.12.12",
     "tsup": "^8.0.2",
