@@ -16,6 +16,7 @@ test('create an answer ', async () => {
 		content: 'Nova resposta',
 		questionId: '1',
 		instructorId: '1',
+		
 	});
 
 	expect(answer.props.content).toEqual('Nova resposta');

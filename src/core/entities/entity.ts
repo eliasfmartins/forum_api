@@ -4,9 +4,9 @@ export class Entity {
 	private _id: UniqueEntityID;
 
 	get id() {
-		return this._id;
+		return this._id.toString();
 	}
-	constructor( id?: string) {
-		this._id = new UniqueEntityID(id);
+	protected constructor( id?: UniqueEntityID) {
+		this._id = id?? new UniqueEntityID();
 	}
 }
